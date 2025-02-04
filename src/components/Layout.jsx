@@ -24,7 +24,7 @@ const Layout = () => {
   const handleMassPeriod = (newPeriod) => {
     setPeriodTopTracks(newPeriod);
     setPeriodTopArtists(newPeriod);
-    setPeriodTopAlbums(newPeriod);
+    setPeriodTopAlbums(newPeriod); 
   };
 
   return (

@@ -25,7 +25,7 @@ export default function LastFMAPI({ method, page, period, user }: { method: GetM
   // Use `useQuery` to fetch the data using the `getTop` function and pass in the `method`
   const { data, error, isLoading, isSuccess } = useQuery({
     queryKey: ['top', method, page, period, user],  // Add `method` as part of the key for caching
-    queryFn: () => getTop(method, page, period, user),    // Pass method correctly into `getTop`
+    queryFn: () => getTop(method, page, period, user),    // Pass method correctly into getTop
     // placeholderData: (prev) => prev
   });
 
