@@ -29,7 +29,7 @@ export default function LastFMAPI({ method, page, period, user }: { method: GetM
     // placeholderData: (prev) => prev
   });
 
-  // console.log(data);
+  // console.log(data); 
   if (error) return <div>There was an error!</div>
   if (isLoading) return <div>Loading...</div>
 
