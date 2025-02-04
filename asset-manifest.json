@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lastdash/static/css/main.615c782e.css",
+    "main.js": "/lastdash/static/js/main.50e466e5.js",
+    "static/js/488.31b2e094.chunk.js": "/lastdash/static/js/488.31b2e094.chunk.js",
+    "static/media/logo.svg": "/lastdash/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lastdash/index.html",
+    "main.615c782e.css.map": "/lastdash/static/css/main.615c782e.css.map",
+    "main.50e466e5.js.map": "/lastdash/static/js/main.50e466e5.js.map",
+    "488.31b2e094.chunk.js.map": "/lastdash/static/js/488.31b2e094.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.615c782e.css",
+    "static/js/main.50e466e5.js"
+  ]
+}
