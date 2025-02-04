@@ -58,7 +58,6 @@ export type DataItem = {
     playcount: string;
 }
 
-export const API_KEY = '5e6834b146f4429cb9e2268903be4ca9';
 
 // interface ListItemProps {
 //     index: number;

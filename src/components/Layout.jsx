@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Card from './Card';
-import ReactQueryPractice from './ReactQueryPractice.tsx';
 import { GetMethod, Period } from './constants.tsx';
 import Dropdown2 from './Dropdown2.jsx';
+import LastFMAPI from './LastFMAPI.tsx';
 
 
 const Layout = () => {
@@ -77,7 +77,7 @@ const Layout = () => {
               setPeriod={setPeriodTopTracks}
             >
               {/* <ReactQueryPractice method={GetMethod.TOP_TRACKS} page={pageTopTracks} /> */}
-              <ReactQueryPractice method={GetMethod.TOP_TRACKS} page={pageTopTracks} period={periodTopTracks} user={user} />
+              <LastFMAPI method={GetMethod.TOP_TRACKS} page={pageTopTracks} period={periodTopTracks} user={user} />
             </Card>
 
             {/* Top Artists Card */}
@@ -87,7 +87,7 @@ const Layout = () => {
               period={periodTopArtists}
               setPeriod={setPeriodTopArtists}
             >
-              <ReactQueryPractice method={GetMethod.TOP_ARTISTS} page={pageTopArtists} period={periodTopArtists} user={user} />
+              <LastFMAPI method={GetMethod.TOP_ARTISTS} page={pageTopArtists} period={periodTopArtists} user={user} />
             </Card>
 
             {/* Top Albums Card */}
@@ -97,7 +97,7 @@ const Layout = () => {
               period={periodTopAlbums}
               setPeriod={setPeriodTopAlbums}
             >
-              <ReactQueryPractice method={GetMethod.TOP_ALBUMS} page={pageTopAlbums} period={periodTopAlbums} user={user} />
+              <LastFMAPI method={GetMethod.TOP_ALBUMS} page={pageTopAlbums} period={periodTopAlbums} user={user} />
             </Card>
 
             {/* Test Card

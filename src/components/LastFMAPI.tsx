@@ -1,10 +1,11 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query"; // will handle api fetching for u
 import { useQueryClient } from '@tanstack/react-query'
-import { API_KEY, GetMethod, Period, DataItem, ItemType, APIMethods } from './constants.tsx'
+import {GetMethod, Period} from './constants.tsx'
 
 
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const limit = 10;
 // const user = 'wymir';
@@ -19,9 +20,8 @@ const getTop = (method: string, page: number, period: string, user: string) =>
   fetch(`${BASE_URL}user.${method}&user=${user}&period=${period}&page=${page}`).then((res) => res.json());
 
 // The component that uses `React Query` to fetch data
-export default function ReactQueryPractice({ method, page, period, user }: { method: GetMethod, page: number, period: Period, user: string }) {
+export default function LastFMAPI({ method, page, period, user }: { method: GetMethod, page: number, period: Period, user: string }) {
   const queryClient = useQueryClient();
-
   // Use `useQuery` to fetch the data using the `getTop` function and pass in the `method`
   const { data, error, isLoading, isSuccess } = useQuery({
     queryKey: ['top', method, page, period, user],  // Add `method` as part of the key for caching
@@ -29,7 +29,7 @@ export default function ReactQueryPractice({ method, page, period, user }: { met
     // placeholderData: (prev) => prev
   });
 
-  console.log(data);
+  // console.log(data);
   if (error) return <div>There was an error!</div>
   if (isLoading) return <div>Loading...</div>
 
